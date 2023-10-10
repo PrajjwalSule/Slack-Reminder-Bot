@@ -25,7 +25,7 @@ jobs:
       - name: execute py script # run main.py
         env:
           SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
-        run: python main.py
+        run: python bot.py
           
       - name: commit files
         run: |
