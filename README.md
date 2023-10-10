@@ -30,6 +30,17 @@ This is a slack bot which will give you the reminder as your choice on your time
 ### Modify the config.yaml file according to your time and reminders.
 
 ### Create an app on slack-api.
+- Go to this link
+- - `https://api.slack.com/start/quickstart`
+- Click on create slack app button.
+- Click on create new app.
+- Click From Scratch.
+- Write app name and select the workspace.
+- Go to OAuth & Permissions.
+- Scroll down and find Scopes in the OAuth & Permissions.
+- Click on Add an AOuth Scope button.
+- Select Chat:write.
+- 
 ### Create an channel name as reminders in your slack workspace.
 ### Add that app to your workspace and channel.
 ### Copy the token
