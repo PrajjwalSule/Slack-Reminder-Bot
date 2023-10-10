@@ -1,10 +1,10 @@
 name: Slack Reminder Bot
 
 on:
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
   schedule:
-    - cron: '*/1 * */1 * *' # At every minute on every day-of-month.
+    - cron: '* * * * *' # At every minute on every day-of-month.
 
 jobs:
   build:
