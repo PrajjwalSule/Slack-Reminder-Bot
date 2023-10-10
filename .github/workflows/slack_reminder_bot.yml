@@ -2,7 +2,7 @@ name: Slack Reminder Bot
 
 on:
   schedule:
-    - cron: '* 0 * * *' # At every minute
+    - cron: '* * * * *' # At every minute
 
 jobs:
   build:
