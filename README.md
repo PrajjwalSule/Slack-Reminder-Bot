@@ -4,11 +4,17 @@ This is a slack bot which will give you the reminder as your choice on your time
 
 ## Steps to use this bot
 
-- Clone this repo
-  **`git clone git@github.com:PrajjwalSule/Slack-Reminder-Bot.git`**
-- Make virtual environment
-- - `andjn`
-- Activate that virtual environment
+### Clone this repo
+- -  **`git clone git@github.com:PrajjwalSule/Slack-Reminder-Bot.git`**
+
+### Make virtual environment:
+- - **`python -m venv .venv`** (Windows)
+- - **`python3 -m venv .venv`** (Linux)
+
+### Activate that virtual environment:
+- - **`source .venv/Scripts/activate`** (Windows)
+- - **`source /venv/bin/activate`** (Linux)
+
 - Create a variable file name as .env
 - Create a variale name as SLACK_TOKEN in that variable file.
 - Install all the dependencies.
