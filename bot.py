@@ -56,9 +56,9 @@ if __name__ == "__main__":
     if current_time < '12':
         for i in range(3):
             morningReminder()
-            time.sleep(3)
+            # time.sleep(3)
 
     else:
         for i in range(3):
             eveningReminders()
-            time.sleep(3)
+            # time.sleep(3)
