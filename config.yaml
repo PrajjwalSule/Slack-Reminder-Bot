@@ -1,4 +1,4 @@
 #Edit this yaml file according to your needs.
 Reminders:
-  Morning : {'10:53':'Wake Up call for DSM!', '11:25':"Learn Python!!", '12:00':"Get Ready for War Room"}
+  Morning : {'10:53':'Wake Up call for DSM!', '11:32':"Learn Python!!", '12:00':"Get Ready for War Room"}
   Evening: {'08:03': "Now it's time for Coding Round", '08:28': "Hello!!!"}
