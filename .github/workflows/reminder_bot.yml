@@ -4,7 +4,7 @@ on:
   # push:
   #   branches: [main]
   schedule:
-    - cron: '* * * * *' # At every minute
+    - cron: '*/1 * */1 * *' # At every minute on every day-of-month.
 
 jobs:
   build:
