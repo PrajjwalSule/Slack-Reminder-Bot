@@ -14,7 +14,12 @@ env_path = Path('.')/".env"
 load_dotenv(dotenv_path=env_path)
 CHANEL_NAME = 'reminders'
 
-client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
+try:
+    SECRET_TOKEN = os.environ['SLACK_TOKEN']
+except KeyError:
+    SECRET_TOKEN = "Token not available!"
+
+client = slack.WebClient(token=SECRET_TOKEN)
 
 
 def morningReminder():
