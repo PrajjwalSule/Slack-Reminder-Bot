@@ -5,6 +5,7 @@ This is a slack bot which will give you the reminder as your choice on your time
 ## Steps to use this bot
 
 - Clone this repo
+`jjnnk`
 - Make virtual environment
 - Activate that virtual environment
 - Create a variable file name as .env

@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 import yaml
-from datetime import datetime
+from datetime import datetime, date
 import time
 
 with open("config.yaml", 'r') as file:
@@ -29,7 +29,7 @@ def morningReminder():
 
     for time in messages.keys():
         if time == datetime.now().strftime("%I:%M"):
-            reminder = f"{datetime.now().strftime('%I:%M %p')} : {messages[time]}"
+            reminder = f"{date.today()} : {datetime.now().strftime('%I:%M %p')} : {messages[time]}"
             client.chat_postMessage(channel=CHANEL_NAME, text=reminder)
 
 
@@ -42,7 +42,7 @@ def eveningReminders():
 
     for time in messages.keys():
         if time == datetime.now().strftime("%I:%M"):
-            reminder = f"{datetime.now().strftime('%I:%M %p')} : {messages[time]}"
+            reminder = f"{date.today()} : {datetime.now().strftime('%I:%M %p')} : {messages[time]}"
             client.chat_postMessage(channel=CHANEL_NAME, text=reminder)
 
 
