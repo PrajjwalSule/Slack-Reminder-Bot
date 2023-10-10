@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: execute py script # run main.py
+      - name: execute py script # run bot.py
         env:
           SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
         run: python bot.py
