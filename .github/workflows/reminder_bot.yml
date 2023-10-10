@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content to github runner
+      # - name: checkout repo content
+      #   uses: actions/checkout@v2 # checkout the repository content to github runner
 
-      - name: setup python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9' # install the python version needed
+      # - name: setup python
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.9' # install the python version needed
           
       - name: install python packages
         run: |
@@ -25,13 +25,13 @@ jobs:
           
       - name: execute py script # run bot.py
         env:
-          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          SECRET_TOKEN: ${{secrets.SECRET_TOKEN}}
         run: python bot.py
           
-      - name: commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+      # - name: commit files
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add -A
+      #     git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
