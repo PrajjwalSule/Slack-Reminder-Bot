@@ -40,8 +40,18 @@ This is a slack bot which will give you the reminder as your choice on your time
 - Scroll down and find Scopes in the OAuth & Permissions.
 - Click on Add an AOuth Scope button.
 - Select Chat:write.
-- 
+- Then click to install on workspace.
+- Select your workspace where you want to connect that bot, then click on allow.
+- After succesfully connected to your workspace you will find the **`OAuth Token`**.
+- Copy that Token.
+- Paste that Token in notepad or word in your loacl system for a moment.
+
 ### Create an channel name as reminders in your slack workspace.
+- Create a private channel in your workspace called as **`reminders`**
+
 ### Add that app to your workspace and channel.
-### Copy the token
+- Now add your created app to the **`reminders`** channel.
+
 ### Paste that token in SLACK_TOKEN variable.
+- Get that copies token.
+- Paste those credentials on .env file in variable name as **SLACK_TOKEN**
